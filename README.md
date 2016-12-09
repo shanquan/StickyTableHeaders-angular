@@ -9,7 +9,7 @@
 - 数据动态加载时的用法：`<table stickyheader datafill='list'>`，其中$scope.list为侦听的数据值，一旦检测$scope.list发生变化则动态渲染表格
 
 ##说明
-如果表格的列内容一直不会发生变化，scope.$watch可不带true参数：(见angular.stickyheaders.js最后注释初代码，也可修改增加插件的参数进行设置)
+如果表格的列内容一直不会发生变化，scope.$watch可不带true参数：(见angular.stickyheaders.js最后注释处代码，也可修改增加插件的参数进行设置)
 ```
 var watch = scope.$watch('datafill', function(newV, oldV) {
                         if (newV) {//data fetched
